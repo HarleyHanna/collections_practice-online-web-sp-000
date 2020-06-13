@@ -34,8 +34,9 @@ def kesha_maker(array)
  new_string = ""
  array.each do |word|
    new_string << word
+   new_string << " "
   end
-  new_string.split("")
+  new_string.split("").to_a
   new_string.each do |char|
     if char != " "
       counter += 1
