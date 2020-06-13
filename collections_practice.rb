@@ -34,7 +34,7 @@ def kesha_maker(array)
  new_array = []
  array.each do |word|
     word.scan(/.{2}|.+/).delete
-    word.scan
+    new_string = word.scan(/.{2}|.+/).join("$")
     new_array << new_string
   end
 new_array
