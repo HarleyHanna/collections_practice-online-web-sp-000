@@ -31,4 +31,7 @@ end
   
 def kesha_maker(array)
   array.each do |word|
-    word.scan(/.{3}|.+/).join("$")
+    new_array << word.scan(/.{3}|.+/).join("$")
+  end
+new_array
+end
