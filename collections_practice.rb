@@ -33,7 +33,7 @@ def kesha_maker(array)
  counter = 0
  new_array = []
  new_string = ""
- array.to_s
+ new_string = array.to_s
  array.each do |word|
    word.to_s
    new_array << word.split("")
