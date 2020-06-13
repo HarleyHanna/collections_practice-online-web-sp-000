@@ -30,17 +30,21 @@ def reverse_array(array)
 end
   
 def kesha_maker(array)
- array.split(/./)
  counter = 0
- each do |char|
-   if char != " "
-     counter += 1
+ new_string = ""
+ array.each do |word|
+   new_string << word
+  end
+  new_string.split("")
+  new_string.each do |char|
+    if char != " "
+      counter += 1
     elsif char == " "
       counter = 0
     elsif counter == 3
       char = "$"
     end
   end
-  array.join(" ")
-  array
+  new_string.join(" ")
+  new_string
 end
