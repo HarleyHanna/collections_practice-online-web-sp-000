@@ -44,6 +44,5 @@ def kesha_maker(array)
       char = "$"
     end
   end
-  new_array[0].join
   new_array
 end
