@@ -33,7 +33,7 @@ def kesha_maker(array)
  new_string = ""
  new_array = []
  array.each do |word|
-    new_string = word.sub(/.{2}|.+/, "$")
+    new_string = word.sub(/(?:\S{3}?)/, "$")
     new_array << new_string
   end
 new_array
