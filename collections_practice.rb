@@ -30,19 +30,6 @@ def reverse_array(array)
 end
   
 def kesha_maker(array)
- counter = 0
- new_array = []
- new_string = ""
- new_string = array.to_s
- new_array = new_string.chomp.split("")
-  new_array.each do |char|
-    if char != " "
-      counter += 1
-    elsif char == " "
-      counter = 0
-    elsif counter == 3
-      char = "$"
-    end
-  end
-  new_arrayy = new_array.join(" ")
+ array.each do |word|
+   word.slice
 end
