@@ -30,4 +30,5 @@ def reverse_array(array)
 end
   
 def kesha_maker(array)
-  array.scan ||
+  array.each do |word|
+    word.scan(/.{3}|.+/).join("$")
