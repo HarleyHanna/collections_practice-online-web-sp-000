@@ -31,6 +31,16 @@ end
   
 def kesha_maker(array)
  array.split("")
+ counter = 0
  each do |char|
-   
+   if char != " "
+     counter += 1
+    elsif char == " "
+      counter = 0
+    elsif counter == 3
+      char = "$"
+    end
+  end
+  array.join(" ")
+  array
 end
