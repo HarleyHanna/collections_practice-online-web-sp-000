@@ -34,7 +34,7 @@ def kesha_maker(array)
  new_array = []
  new_string = ""
  new_string = array.to_s
- new_array = new_string.join("")
+ new_array = new_string.split("")
   new_array.each do |char|
     if char != " "
       counter += 1
