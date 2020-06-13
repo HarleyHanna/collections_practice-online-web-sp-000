@@ -36,8 +36,8 @@ def kesha_maker(array)
  array.each do |word|
    word.to_s
    new_array << word.split("")
+   new_array << " "
   end
-  new_array << new_string
   new_array.each do |char|
     if char != " "
       counter += 1
